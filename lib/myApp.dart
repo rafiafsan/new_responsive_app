@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'Home.dart';
+import 'ResponsiveApp.dart';
+
 
 class myApp extends StatelessWidget {
   const myApp({super.key});
@@ -15,7 +16,7 @@ class myApp extends StatelessWidget {
 
       ),
       title: "First App",
-      home: Home(),
+      home: LayoutBuilder1(),
     );
   }
 }
