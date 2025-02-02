@@ -1,3 +1,4 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 import 'Aspect Ratio_Expanded_FractionallySizedBox.dart';
@@ -12,6 +13,9 @@ class myApp extends StatelessWidget {
     return Sizer(
       builder: (context,orientation,screenType) {
         return MaterialApp(
+          useInheritedMediaQuery: true,
+          locale: DevicePreview.locale(context),
+          builder: DevicePreview.appBuilder,
           theme: ThemeData(
             primaryColor: Colors.white,
             appBarTheme: AppBarTheme(
