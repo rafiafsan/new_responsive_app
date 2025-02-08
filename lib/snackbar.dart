@@ -68,7 +68,21 @@ class _module11class1State extends State<module11class1> {
                       color: Colors.black45,
                       // backgroundColor: Colors.blue,
                     ))),
-          )
+          ),
+          SizedBox(height: 20,),
+          ElevatedButton(onPressed: (){
+            showDialog(context: context, builder: (context){
+              return AlertDialog(
+                title: Text("Are you sure ?"),
+                content: Text("Are you sure about delete ?"),
+                actions: [
+                  TextButton(onPressed: (){}, child: Text("ok")),
+                  TextButton(onPressed: (){}, child: Text("Cancel")),
+                ],
+              );
+            });
+
+          }, child: Text("Alert Dialog",style: TextStyle(fontSize: 25),))
         ],
       ),
     );
