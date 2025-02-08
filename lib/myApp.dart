@@ -26,7 +26,7 @@ class myApp extends StatelessWidget {
 
           ),
           title: "First App",
-          home: module11class1(),
+          home: Module11class1(),
         );
       }
     );
